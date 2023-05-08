@@ -8,4 +8,4 @@ resultado = 1
 for sequencia in range(número, 0, -1):
     resultado = resultado * sequencia
 
-print(f'{número}! = {resultado}')
+print(f'{número}! = {resultado}') 
