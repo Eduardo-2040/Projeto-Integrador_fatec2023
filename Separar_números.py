@@ -1,6 +1,13 @@
-número = int(input('Digite um número de três algarismos: '))
+num_desejados = []
 
-num1 = número // 100
-num2 = número % 100
+for número in range(1000, 9999):
 
-print(f'{num1} + {num2} = {num1 + num2}')
+    num1 = número // 100
+    num2 = número % 100
+
+    soma = num1 + num2
+
+    if soma * soma == número:
+        num_desejados.append(número)
+
+print(num_desejados)
