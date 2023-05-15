@@ -13,5 +13,8 @@ if escolha == 1:
     print(f'Sua lista: {lista}')
 
 elif escolha == 2:
-    lista.reverse()
-    print(f'Sua lista: {lista}')
+    #lista.reverse()
+    #print(f'Sua lista: {lista}')
+
+    for i in range(9, -1, -1):
+        print(lista[i], end=' ')
