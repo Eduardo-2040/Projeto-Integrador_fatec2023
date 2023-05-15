@@ -1,16 +1,15 @@
-import random
+from random import *
 
 lista = []
 pares = []
 impares = []
 
 for i in range(10):
-    num = random.randint(1,50)
-    lista.append(num)
-    if num % 2 == 0:
-        pares.append(num)
-    else:
-        impares.append(num)
+    lista.append(randint(1, 50))
+    if lista[i] % 2 == 0:
+        pares.append(lista[i])
+    elif lista[i] % 2 != 0:
+        impares.append(lista[i])
 
 print(f'lista: {lista}')
 print(f'Pares: {len(pares)}')
